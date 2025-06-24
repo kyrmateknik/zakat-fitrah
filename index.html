@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Zakat Fitrah by Kyrma Mydyan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Zakat Fitrah" class="logo" />
+    <h1>Zakat Fitrah Online</h1>
+    <nav>
+      <a href="#tentang">Tentang</a>
+      <a href="#kalkulator">Kalkulator</a>
+      <a href="#saran">Saran</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="tentang">
+  <h2>Tentang Website</h2>
+  <p>Assalamualaikum warahmatullahi wabarakatuh.</p>
+  <p>Perkenalkan, saya <strong>Kyrma Mydyan</strong>, mahasiswa Fakultas Teknik Kelas 4.4 Universitas Jabal Ghafur. Website ini saya buat sebagai media sederhana untuk membantu umat Islam dalam menghitung zakat fitrah secara mudah dan cepat.</p>
+  <p>Zakat fitrah adalah kewajiban setiap muslim di bulan Ramadhan. Sayangnya, masih banyak yang bingung berapa jumlah zakat yang harus dibayarkan. Web ini hadir untuk menjawab masalah itu.</p>
+  <p>Cukup masukkan harga 1 liter beras yang biasa Anda konsumsi, lalu sistem akan menghitung zakat fitrah Anda berdasarkan takaran 2,5 liter beras. Dengan begitu, Anda tidak lagi perlu menghitung manual atau takut keliru.</p>
+  <p>Semoga website ini bisa menjadi amal jariyah dan bermanfaat bagi siapa saja yang membutuhkannya.</p>
+<h3>Cara Menghitung Zakat Fitrah</h3>
+<p>Zakat fitrah dibayarkan dalam bentuk makanan pokok (seperti beras) sebanyak <strong>2,5 kg atau liter per orang</strong>.</p>
+<p>Jika ingin membayar dengan uang, maka tinggal dikalikan dengan harga beras per liter yang biasa Anda konsumsi.</p>
+
+<p><strong>Rumus:</strong></p>
+<p>
+  Zakat Fitrah = 2,5 × Harga 1 liter beras<br />
+  Contoh: jika harga beras = Rp15.000<br />
+  Maka: 2,5 × 15.000 = <strong>Rp37.500</strong> per orang
+</p>
+</section>
+
+
+    <section id="kalkulator">
+      <h2>Kalkulator Zakat Fitrah</h2>
+      <input type="number" id="harga" placeholder="Harga 1 liter beras (contoh: 15000)" />
+      <button onclick="hitungZakat()">Hitung</button>
+      <div id="hasil"></div>
+    </section>
+
+    <section id="saran">
+      <h2>Kotak Saran</h2>
+      <form onsubmit="kirimSaran(); return false;">
+        <input type="text" id="nama" placeholder="Nama Anda" required />
+        <textarea id="pesan" placeholder="Tulis saran atau komentar..." required></textarea>
+        <button type="submit">Kirim</button>
+        <p id="notif-saran" style="color:green;"></p>
+      </form>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak Saya</h2>
+      <p>Silakan hubungi saya jika ada pertanyaan, saran, atau ingin berdiskusi seputar pengembangan website ini:</p>
+      <ul>
+        <li>📱 WhatsApp: <a href="https://wa.me/6282397530615" target="_blank">0823-9753-0615</a></li>
+        <li>📷 Instagram: <a href="https://instagram.com/kyrma_mydyan" target="_blank">@kyrma_mydyan</a></li>
+        <li>📧 Email : <a href="mailto:mydyank@gmail.com">mydyank@gmail.com</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 oleh Kyrma Mydyan | Dibuat dengan tulus ♥ di UNIGHA</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
